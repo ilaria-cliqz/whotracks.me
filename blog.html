@@ -1,0 +1,453 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>WhoTracks.me | Blog</title>
+    <meta name="description" content="This is our tech blog where we write about privacy, dissect trackers and map the tracking landscape in popular sites.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- OG params for sharable content -->
+    <meta property="og:title" content="WhoTracks.me | Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whotracks.me/blog.html">
+    <meta property="og:description" content="This is our tech blog where we write about privacy, dissect trackers and map the tracking landscape in popular sites.">
+
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="./static/img/favicon-2.ico">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/custom.css">
+    <link rel="stylesheet" href="./static/css/easy-autocomplete.min.css">
+ 
+    <!--add this block to templates that need extra styling-->
+    
+<link rel="stylesheet" href="./static/css/blog/card.css">
+
+
+    <!-- jQuery -->
+    <script src="./static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="./static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = "."
+    </script>       
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=".">
+                    <img class="logo" alt="Who Tracks Me" src="./static/img/logo-white.svg">
+                </a>
+                </div>
+            </div>
+
+            <div class="col-md-offset-1 col-md-9 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+                                <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="./trackers.html">TRACKERS</a>
+                        </li>
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="./websites.html">WEBSITES</a>
+                        </li>
+                        <li
+                             class="active" 
+                        >
+                            <a class="nav-button" href="./blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <!--Search bar-->
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+
+    
+    <div class="breadcrumb-bar">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+
+
+
+
+<section class="grey-bg">
+    <div class="container blog-page">
+        <div class="header">
+            <div class="row">
+                <div class="col-md-9 col-sm-9">
+                    <h1>Blog</h1>
+                    <div class="subtitle">This is our tech blog where we write about privacy, dissect trackers and map the tracking landscape in popular sites.</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-data-feb18-2.png" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/update_feb_2018.html">February Update - The Tracking Shell Game</a></h3>
+            <p>How mergers and acquisitions are hiding who actually is tracking us.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/trackers_on_site/blog-sankey-1.png" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/trackers_in_your_favorite_site.html">Making sense of the trackers on Reddit</a></h3>
+            <p>Using whotracks.me data and sankey diagrams to dissect trackers</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-data-jan18.png" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/update_jan_2018.html">WhoTracks.me January Update</a></h3>
+            <p>New data and trackers in our monthly update.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="row">
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-data-dec17.png" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/update_dec_2017.html">WhoTracks.me December Update</a></h3>
+            <p>New data and trackers in our monthly update.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-generate-adb-filters.jpg" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/generating_adblocker_filters.html">Generating Ad-Blocker filters from whotracks.me data</a></h3>
+            <p>Let's never miss a new tracker again.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/tracking_and_ux/ux_header.png" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/tracking_and_ux.html">The Impact of Tracking on User Experience</a></h3>
+            <p>Beyond privacy - a survey of hidden and visible effects of tracking on user experience.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="row">
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-cookies.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/cookies.html">Cookies</a></h3>
+            <p>A small piece of data sent from a website, meant to 'help', used to track.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-fingerprinting.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/fingerprinting.html">Fingerprinting</a></h3>
+            <p>Let me tell you what's unique about your device.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-anti-tracking.jpg" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/how_cliqz_antitracking_protects_users.html">How Cliqz anti-tracking protects users from web tracking</a></h3>
+            <p>Using an algorithmic, data-driven approach to remove unique identifiers that track users.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="row">
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-facebook.jpg" />
+        <div class="caption">
+            <p class="article">article</p>
+
+            <h3><a href="./blog/how_facebook_knows_exactly_what_turns_you_on.html">How facebook knows exactly what turns you on</a></h3>
+            <p>A technical analysis of the methods used to track users as a third party. Deep dive into a couple of case studies.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-tracker-categories.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/tracker_categories.html">Tracker Categories</a></h3>
+            <p>Definitions for different types of trackers</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-pixel.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/tracking_pixel.html">Tracking Pixel</a></h3>
+            <p>So, ... did you read my email?</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="row">
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-trackers.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/what_is_a_tracker.html">What is a tracker?</a></h3>
+            <p>Explaining what makes a particular domain a  tracker</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+                
+                    <div class="col col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+    <div class="thumbnail">
+        <img src="./static/img/blog/blog-data2.jpg" />
+        <div class="caption">
+            <p class="primer">primer</p>
+
+            <h3><a href="./blog/where_is_the_data_from.html">Where does the data come from?</a></h3>
+            <p>An explanation of the origin of the data in this site, and why its collection is private.</p>
+          </div>
+    </div> 
+</div>
+                    </div>
+                
+            
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+    
+
+    
+    <div class="breadcrumb-bar">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                     Get the data
+                </a>
+                <div class="copyright">
+                    &copy; Cliqz - All rights reserved
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/"
+                    target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/"
+                   target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local javascript modules -->
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="./static/js/jquery.easy-autocomplete.js"></script>
+    <script type="text/javascript" src="./static/js/search-bar.js"></script>
+
+</footer>
+<!-- END OF FOOTER -->

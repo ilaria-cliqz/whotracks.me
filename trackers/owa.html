@@ -1,0 +1,649 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Tracker | OWA</title>
+    <meta name="description" content="Tracker profile of OWA. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- OG params for sharable content -->
+    <meta property="og:title" content="Tracker | OWA">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whotracks.me/trackers/owa.html">
+    <meta property="og:description" content="Tracker profile of OWA. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="../static/img/favicon-2.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="../static/css/easy-autocomplete.min.css">
+ 
+    <!--add this block to templates that need extra styling-->
+    
+    <link rel="stylesheet" href="../static/css/trackers/profile.css">
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="../static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = ".."
+    </script>       
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..">
+                    <img class="logo" alt="Who Tracks Me" src="../static/img/logo-white.svg">
+                </a>
+                </div>
+            </div>
+
+            <div class="col-md-offset-1 col-md-9 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+                                <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li
+                             class="active" 
+                        >
+                            <a class="nav-button" href="../trackers.html">TRACKERS</a>
+                        </li>
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="../websites.html">WEBSITES</a>
+                        </li>
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="../blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <!--Search bar-->
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>OWA</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var operates_under_selector = '#operates-under p',
+        $operates_under_list = $(operates_under_selector),
+        operates_list_size = $operates_under_list.length,
+        items_to_show = 2,
+        $expand = $('.operates-expand'),
+        $collapse = $('.operates-collapse');
+    $(operates_under_selector + ':lt(' +items_to_show+')').show();
+    $expand.click(function(e) {
+        items_to_show = operates_list_size;
+        $(operates_under_selector + ':lt('+items_to_show+')').show();
+        if(items_to_show === operates_list_size) {
+            $collapse.removeClass('hidden');
+            $expand.addClass('hidden');
+        }
+    });
+
+    $collapse.click(function() {
+        $(this).addClass('hidden');
+        $expand.removeClass('hidden');
+        $operates_under_list.not(':lt(2)').hide();
+    });
+
+});
+</script>
+<div id="tracker-page" class="overview-page">
+    <div id="overview-header">
+        <div class="container">
+            <div class="row overview-info inverse">
+                <div class="col-md-6 col-sm-6">
+  <h1>OWA</h1>
+  
+    <p class="header">Owned by The Austrian Web Analysis (OWA)</p>
+  
+  
+    <p id="domain">
+        <a target="_blank" rel="noreferrer"  href="http://oewa.at/">http://oewa.at/</a>
+    </p>
+  
+</div>
+
+<div class="col-md-6 col-sm-6">
+  <div class="overview-info-right">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <p class="header">TRACKER RANK</p>
+        <p class="tracker-rank">
+          <span class="emphasis">154</span>
+          /600
+        </p>
+        <p class="description">Relatively prevalent</p>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        
+          <p class="header">OPERATES UNDER</p>
+          <div id="operates-under">
+          
+            <p>
+              <a class="profile-label"
+                 target="_blank"
+                 rel="noreferrer"
+                 href="//oewabox.at"> oewabox.at
+              </a>
+            </p>
+          
+
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="overview-header-box">
+  <div class="row">
+
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6 col-sm-6">
+        <h3>TRACKER REACH</h3>
+        <div class="trend">
+          <img class="trackers-icon" src="../static/img/page.svg">
+          <span class="percentage">
+            0.5%
+            <span class="graph"><div id="503d74ea-24bd-4ee9-98bc-f684bb395b5a" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("503d74ea-24bd-4ee9-98bc-f684bb395b5a", [{"type": "scatter", "x": ["2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01", "2018-01-01"], "y": [0.7108328441817469, 0.6974394815543831, 0.7183788802730564, 0.7286382247039838, 0.7139748877521582, 0.6703014864442954, 0.6297478552306179, 0.5885518759769773, 0.5293180206707646], "text": ["0.71% on May 17", "0.70% on Jun 17", "0.72% on Jul 17", "0.73% on Aug 17", "0.71% on Sep 17", "0.67% on Oct 17", "0.63% on Nov 17", "0.59% on Dec 17", "0.53% on Jan 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2018-01-01"], "y": [0.5293180206707646], "text": ["0.53% on Jan 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.4763862186036882, 0.7650701359391829], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+
+          <p class="description">of web traffic is tracked by OWA</p>
+      </div>
+      <div class="trend">
+          <img class="trackers-icon" src="../static/img/domain.svg">
+          <span class="percentage">
+            0.1%
+            <span class="graph"><div id="1de578bd-6ba2-4885-a684-ee0f258b6533" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("1de578bd-6ba2-4885-a684-ee0f258b6533", [{"type": "scatter", "x": ["2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01", "2018-01-01"], "y": [0.14073589718051868, 0.14193998702396818, 0.14193954718274313, 0.1497955559025304, 0.15585658173028502, 0.13747937271540048, 0.13925572174801404, 0.13610565892535884, 0.10350821035500922], "text": ["0.14% on May 17", "0.14% on Jun 17", "0.14% on Jul 17", "0.15% on Aug 17", "0.16% on Sep 17", "0.14% on Oct 17", "0.14% on Nov 17", "0.14% on Dec 17", "0.10% on Jan 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2018-01-01"], "y": [0.10350821035500922], "text": ["0.10% on Jan 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.0931573893195083, 0.1636494108167993], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+          <p class="description">of sites use the OWA tracker</p>
+      </div>
+      <p class="subtitle">There are about 1.8 Billion sites on the internet</p>
+    </div>
+
+
+    <!-- Right COLUMN -->
+    <div class="col-md-6 col-sm-6">
+          <h3>SEEN ON THESE TYPES OF WEBSITES</h3>
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">54% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="67.5" aria-valuemin="0" aria-valuemax="100" style="width: 67.5%">
+                News and Portals
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">17% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="21.25" aria-valuemin="0" aria-valuemax="100" style="width: 21.25%">
+                E-Commerce
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">12% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100" style="width: 15.0%">
+                Reference
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">8% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%">
+                Entertainment
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">4% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="5.0" aria-valuemin="0" aria-valuemax="100" style="width: 5.0%">
+                Recreation
+                </div>
+              </div>
+            </div>
+            
+          
+
+          <h3>TRACKING TYPE</h3>
+          <div class="row tracking-methods">
+            
+              <div  class="col-md-4" >
+                <img src="../static/img/cookies.svg">
+<p class="tracking-method">
+  <span class="highlight">COOKIES</span> are files placed by the website, stored in the browser
+  that is used to identify you to the website. <div>
+    <a class="learn-more" href="../blog/cookies.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+
+            
+              <div  class="col-md-4" >
+                <img  src="../static/img/fingerprinting.svg">
+<p class="tracking-method">
+  <span class="highlight">FINGERPRINTING</span> is a unique digital signature derived from the properties of your device.
+  <div>
+    <a class="learn-more" href="../blog/fingerprinting.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+            
+          </div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="similar-trackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row tracker-category">
+                        <div class="col-md-11">
+                        <h4>TRACKER CATEGORY</h4>
+                        
+                            <span class="cat-item">
+                                <i class="fa fa-circle" style="color: #84D7F0" aria-hidden="true"></i>
+                                Site analytics
+                            </span>
+                            <p class="tracker-desc">Collects and analyzes data related to site usage and performance.</p>
+                        
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/tracker_categories.html">Learn about our tracker categories</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/what_is_a_tracker.html">What is a tracker?</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6  col-sm-6 col-xs-12">
+                    <h4>SIMILAR TRACKERS</h4>
+                    <ul>
+                        
+                            <li>
+                                <a href="../trackers/google_analytics.html" class="entity-name">
+                                Google Analytics
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/infonline.html" class="entity-name">
+                                INFOnline
+                                </a>
+                                
+                                    <span>
+                                        INFOnline
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/new_relic.html" class="entity-name">
+                                New Relic
+                                </a>
+                                
+                                    <span>
+                                        New Relic
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/akamai_technologies.html" class="entity-name">
+                                Akamai Technologies
+                                </a>
+                                
+                                    <span>
+                                        Akamai Technologies
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/optimizely.html" class="entity-name">
+                                Optimizely
+                                </a>
+                                
+                                    <span>
+                                        Optimizely
+                                    </span>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="tag-cloud">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Presence on top sites</h2>
+                
+                    <script src="../static/js/d3.min.js"></script>
+<script src="../static/js/d3.layout.cloud.js"></script>
+
+<script>
+        function sanitiseCategory(cat) {
+            return cat.replace(/\s/g, '_').toLowerCase();
+        }
+
+        function drawTagCloud(cat, siteList) {
+            var container = document.getElementById('tag_cloud_container');
+            var width = Math.max(container.offsetWidth, 300);
+            var height = Math.max(container.offsetHeight - 5, 400);
+            var containerSvg = document.getElementById('tag_cloud');
+            containerSvg.setAttribute('width', width);
+            containerSvg.setAttribute('height', height);
+
+            var sites = JSON.parse(siteList);
+            var minSize = 20;
+            var maxSize = 100;
+            var scaleFactor = (maxSize - minSize) / 0.3;
+
+            var layout = d3.layout.cloud()
+                .size([width, height])
+                .words(sites.map(function (d) {
+                    return {
+                        text: d.site.replace('www.', ''),
+                        size: Math.min(maxSize, minSize + d.frequency * scaleFactor),
+                        rotate: 0,
+                        opacity: 0.5 + (d.site_freq || 0. * 0.7),
+                        colour: d.site_cat,
+                        href: d.url,
+                        category: d.category,
+                    };
+                }))
+                .padding(3)
+                .rotate(function (d) { return 0 })
+                .font("Impact")
+                .fontSize(function (d) { return d.size; })
+                .on("end", draw);
+
+            layout.start();
+
+            function draw(words) {
+                d3.select('#tag_cloud')
+                    .append("g")
+                    .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function (d) { return d.size + "px"; })
+                    .style("font-family", "Helvetica")
+                    .style("fill", function (d) { return d.colour })
+                    .attr("class", function (d) { return "category-" + sanitiseCategory(d.category) })
+                    .attr("opacity", function (d) { return d.opacity })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .insert('a')
+                    .attr("href", function (d) { return d.href })
+                    .text(function (d) { return d.text; });
+            }
+        }
+
+        var activeCategories = [];
+
+        function toggleTagCloudCategory(cat) {
+            if (cat === "all") {
+                // unselect buttons
+                activeCategories.forEach(function(otherCat) {
+                    document.getElementById('button-' + otherCat).classList.remove('active');
+                });
+                document.getElementById('button-all').classList.add('active');
+                // make everything visible
+                d3.selectAll("#tag_cloud text").style("visibility", "visible");
+                activeCategories = [];
+            } else {
+                document.getElementById('button-all').classList.remove('active');
+                document.getElementById('button-' + cat).classList.add('active');
+
+                if (activeCategories.length === 0) {
+                    // hide everything
+                    d3.selectAll("#tag_cloud text").style("visibility", "hidden");
+                }
+                // make just elements from specified categories visible
+                d3.selectAll("#tag_cloud text.category-" + sanitiseCategory(cat)).style("visibility", "visible");
+                activeCategories.push(cat);
+            }
+        }
+    </script>
+
+
+<ul class="nav nav-tabs">
+    <li class="active" id="button-all">
+        <a href="#all" onclick="toggleTagCloudCategory('all')">Show all</a>
+    </li>
+    
+        
+    
+        
+            <li id="button-Business">
+                <a href="#Business" onclick="toggleTagCloudCategory('Business')">Business</a>
+            </li>
+        
+    
+        
+            <li id="button-E-Commerce">
+                <a href="#E-Commerce" onclick="toggleTagCloudCategory('E-Commerce')">E-commerce</a>
+            </li>
+        
+    
+        
+            <li id="button-Entertainment">
+                <a href="#Entertainment" onclick="toggleTagCloudCategory('Entertainment')">Entertainment</a>
+            </li>
+        
+    
+        
+            <li id="button-News and Portals">
+                <a href="#News and Portals" onclick="toggleTagCloudCategory('News and Portals')">News and portals</a>
+            </li>
+        
+    
+        
+            <li id="button-Recreation">
+                <a href="#Recreation" onclick="toggleTagCloudCategory('Recreation')">Recreation</a>
+            </li>
+        
+    
+        
+            <li id="button-Reference">
+                <a href="#Reference" onclick="toggleTagCloudCategory('Reference')">Reference</a>
+            </li>
+        
+    
+</ul>
+
+<div class="tab-content">
+    <div id="tag_cloud_container" class="tab-pane fade in active">
+        <svg id="tag_cloud" height=400></svg>
+        <script>drawTagCloud('all', '[{"category": "E-Commerce", "frequency": 0.2873928207996203, "site": "willhaben.at", "site_cat": "#71C671", "site_freq": 0.9982061184703083, "url": "../websites/willhaben.at.html"}, {"category": "News and Portals", "frequency": 0.1864560725227024, "site": "orf.at", "site_cat": "#000", "site_freq": 0.9921077434959857, "url": "../websites/orf.at.html"}, {"category": "News and Portals", "frequency": 0.0735208804607579, "site": "derstandard.at", "site_cat": "#000", "site_freq": 0.9864555294656664, "url": "../websites/derstandard.at.html"}, {"category": "News and Portals", "frequency": 0.06998238529968105, "site": "krone.at", "site_cat": "#000", "site_freq": 0.9968384252925977, "url": "../websites/krone.at.html"}, {"category": "News and Portals", "frequency": 0.06192579951375515, "site": "gmx.at", "site_cat": "#000", "site_freq": 0.900251310849803, "url": "../websites/gmx.at.html"}, {"category": "E-Commerce", "frequency": 0.0432025075667544, "site": "geizhals.de", "site_cat": "#71C671", "site_freq": 0.9866933125365568, "url": "../websites/geizhals.de.html"}, {"category": "News and Portals", "frequency": 0.02684390358023202, "site": "gmx.net", "site_cat": "#000", "site_freq": null, "url": "../websites/gmx.net.html"}, {"category": "E-Commerce", "frequency": 0.022957534648795984, "site": "geizhals.at", "site_cat": "#71C671", "site_freq": 0.9851634765088378, "url": "../websites/geizhals.at.html"}, {"category": "", "frequency": 0.01947879694520414, "site": "kurier.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.01742143305179154, "site": "vol.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.015997925046702118, "site": "wunderweib.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.015336324624546614, "site": "tvmovie.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 0.015037537337121548, "site": "landwirt.com", "site_cat": "#000", "site_freq": 0.48446094609460943, "url": "../websites/landwirt.com.html"}, {"category": "", "frequency": 0.013528661535624964, "site": "lecker.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.013116761917960408, "site": "karriere.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.012024054123948738, "site": "diepresse.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.010888662431733486, "site": "feratel.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.010624022262871284, "site": "drei.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.009810894002093068, "site": "nachrichten.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.009435275697901556, "site": "oe24.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.009322163367662067, "site": "tt.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.009016973495506463, "site": "meinbezirk.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.008713917818261039, "site": "kleinezeitung.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.008304152395506663, "site": "immobilienscout24.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00795201023532712, "site": "laola1.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006735519136525064, "site": "autozeitung.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.005779399816764853, "site": "heute.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "E-Commerce", "frequency": 0.005734581723651093, "site": "shpock.com", "site_cat": "#71C671", "site_freq": 0.20274654795140723, "url": "../websites/shpock.com.html"}, {"category": "", "frequency": 0.005706837189818765, "site": "wien.gv.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.005149812318262034, "site": "selbst.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004887306344310012, "site": "eltern.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004855293420657326, "site": "wetter.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 0.004746449480238195, "site": "transfermarkt.de", "site_cat": "#000", "site_freq": 0.02998759505959765, "url": "../websites/transfermarkt.de.html"}, {"category": "", "frequency": 0.004716570751495688, "site": "ichkoche.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004479675116465814, "site": "wko.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003948260583831233, "site": "gutekueche.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003692157194609747, "site": "ottoversand.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0036686810505977777, "site": "sn.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003547031940717572, "site": "universal.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003410443466466113, "site": "netdoktor.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003124461348502121, "site": "cineplexx.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Recreation", "frequency": 0.003124461348502121, "site": "bergfex.at", "site_cat": "#B9D3EE", "site_freq": 0.040068971179899826, "url": "../websites/bergfex.at.html"}, {"category": "News and Portals", "frequency": 0.0031031193994003306, "site": "finanzen.net", "site_cat": "#000", "site_freq": null, "url": "../websites/finanzen.net.html"}, {"category": "", "frequency": 0.0029942754589811996, "site": "help.gv.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0028640895694602778, "site": "futurezone.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002821405671256697, "site": "bazar.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0027125617308375654, "site": "laola1.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002676280417364522, "site": "atv.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0026720120275441636, "site": "1000ps.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0026143887649693297, "site": "tvheute.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002529020968562168, "site": "herold.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 0.002529020968562168, "site": "wetter.com", "site_cat": "#000", "site_freq": null, "url": "../websites/wetter.com.html"}, {"category": "", "frequency": 0.002251575630238892, "site": "cosmopolitan.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0022494414353287128, "site": "tvnow.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002157671054191014, "site": "tele.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0020872426221551056, "site": "news.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0020445587239515247, "site": "fondsprofessionell.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002021082579939555, "site": "docfinder.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001925043808981498, "site": "salzburg24.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0018439444023946945, "site": "fussballoesterreich.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0018161998685623669, "site": "noen.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0017863211398198603, "site": "derstandard.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0015024732167660474, "site": "wogibtswas.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001487533852394794, "site": "wienerzeitung.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014576551236522874, "site": "autoscout24.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0013829583017960208, "site": "sms.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0013808241068858419, "site": "servus.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001244235632634383, "site": "automobile.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0012015517344308021, "site": "vienna.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011759413955086536, "site": "urlauburlaub.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Business", "frequency": 0.0011396600820356099, "site": "xing.com", "site_cat": "blue", "site_freq": null, "url": "../websites/xing.com.html"}, {"category": "News and Portals", "frequency": 0.0010670974550895222, "site": "spox.com", "site_cat": "#000", "site_freq": null, "url": "../websites/spox.com.html"}, {"category": "", "frequency": 0.0009945348281434347, "site": "prosieben.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009945348281434347, "site": "dietagespresse.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009838638535925395, "site": "tv-media.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009411799553889587, "site": "oeamtc.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009262405910177053, "site": "ehftv.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008984960571853778, "site": "ots.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008664831335326921, "site": "profil.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Entertainment", "frequency": 0.0008664831335326921, "site": "rtl.de", "site_cat": "#B8B8B8", "site_freq": null, "url": "../websites/rtl.de.html"}, {"category": "Entertainment", "frequency": 0.0008600805488021549, "site": "songtexte.com", "site_cat": "#B8B8B8", "site_freq": null, "url": "../websites/songtexte.com.html"}, {"category": "", "frequency": 0.0008558121589817969, "site": "watchbox.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007768469473051722, "site": "film.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007384314389219495, "site": "mamilade.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007320288541914123, "site": "woman.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006893449559878314, "site": "fk-austria.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006680030068860409, "site": "falstaff.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006381242781435344, "site": "tips.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006338558883231762, "site": "sat1.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006189165239519229, "site": "quelle.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006146481341315649, "site": "trend.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0005997087697603115, "site": "eishockeyforum.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000576232625748342, "site": "bravo.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0005612932613770887, "site": "puls4.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0005399513122752983, "site": "autorevue.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000527146142814224, "site": "diybook.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004951332191615383, "site": "bergfex.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004929990242513593, "site": "aktionsfinder.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004503151260477784, "site": "events.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 0.0004460467362274203, "site": "kochbar.de", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/kochbar.de.html"}, {"category": "News and Portals", "frequency": 0.0004417783464070622, "site": "wetter.de", "site_cat": "#000", "site_freq": null, "url": "../websites/wetter.de.html"}, {"category": "", "frequency": 0.0004268389820358089, "site": "wohnnet.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00042470478712562984, "site": "ligaportal.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004140338125747346, "site": "fitundgesund.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0003862892787424071, "site": "unijobs.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0003862892787424071, "site": "obereggen.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000384155083832228, "site": "vice.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00030092148233524526, "site": "fondsprofessionell.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00029878728742506623, "site": "mydays.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002923847026945291, "site": "hochficht.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002838479230538129, "site": "salzburg.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00027957953323345486, "site": "gusto.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00026890855868255963, "site": "tannheimertal.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00026890855868255963, "site": "arztsuche24.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002603717790418434, "site": "kronehit.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002582375841316644, "site": "netdoktor.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002497008044909482, "site": "bergfex.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00024116402485023204, "site": "pitztal.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00023262724520951587, "site": "maxfunsports.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00023049305029933682, "site": "mamilade.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00022622466047897871, "site": "skip.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002198220757484416, "site": "galtuer.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002155536859280835, "site": "uncut.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002112852961077254, "site": "skiwelt.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00020488271137718828, "site": "st-peter-ording.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000192077541916114, "site": "bergfex.it", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00018567495718557688, "site": "motorsport-magazin.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00016433300808378642, "site": "xing-news.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0001621988131736074, "site": "skigebiet-willingen.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0001579304233532493, "site": "wilderkaiser.info", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00015579622844307024, "site": "wildkogel-arena.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00014939364371253312, "site": "mayrhofen.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00014512525389217504, "site": "kronplatz.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000142991058981996, "site": "frosch-sportreisen.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00014085686407181694, "site": "skiresort.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0001301858895209217, "site": "missmum.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00011524652514966841, "site": "gofeminin.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00011097813532931032, "site": "hintertuxergletscher.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00010457555059877318, "site": "zermatt.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.817296586823605e-05, "site": "alpbachtal.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.6038770958057e-05, "site": "dkb-handball-bundesliga.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.6038770958057e-05, "site": "hiwu.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.750199131734082e-05, "site": "davos.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.536779640716179e-05, "site": "warth-schroecken.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.536779640716179e-05, "site": "lech-zuers.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.536779640716179e-05, "site": "schneehoehen.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.323360149698274e-05, "site": "vorname.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.10994065868037e-05, "site": "schmitten.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.10994065868037e-05, "site": "fem.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.256262694608752e-05, "site": "skiliftkarussell.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.256262694608752e-05, "site": "oberstdorf.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.042843203590847e-05, "site": "nauders.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.616004221555038e-05, "site": "ok-bergbahnen.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.402584730537133e-05, "site": "jungholz.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.189165239519229e-05, "site": "mann.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.189165239519229e-05, "site": "kleinwalsertal.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.975745748501325e-05, "site": "aqua-dome.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.975745748501325e-05, "site": "vfl-wolfsburg.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.7623262574834204e-05, "site": "volleyball-verband.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.7623262574834204e-05, "site": "skigebiete-test.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.9086482934118027e-05, "site": "galileo.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.9086482934118027e-05, "site": "fichtelberg-ski.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.695228802393898e-05, "site": "willingen.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.481809311375994e-05, "site": "wangerland.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.054970329340185e-05, "site": "kitzbuehel.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.054970329340185e-05, "site": "stubai.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.8415508383222805e-05, "site": "skiarlberg.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.8415508383222805e-05, "site": "frauenzimmer.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.628131347304376e-05, "site": "warth-schroecken.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.628131347304376e-05, "site": "zillertal.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.414711856286471e-05, "site": "lenggries.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.414711856286471e-05, "site": "campaign-archive.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.2012923652685665e-05, "site": "berchtesgaden.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.2012923652685665e-05, "site": "zillertalarena.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.9878728742506624e-05, "site": "adelboden.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.9878728742506624e-05, "site": "aletscharena.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.9878728742506624e-05, "site": "skiamade.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.5610338922148535e-05, "site": "planai.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.5610338922148535e-05, "site": "kitzski.at", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.347614401196949e-05, "site": "maennersache.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9207754191611402e-05, "site": "innsbruck.info", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9207754191611402e-05, "site": "wetter24.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9207754191611402e-05, "site": "badhindelang.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 1.9207754191611402e-05, "site": "live.com", "site_cat": "#000", "site_freq": null, "url": "../websites/live.com.html"}, {"category": "", "frequency": 1.7073559281432355e-05, "site": "allgaeu-cam.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.7073559281432355e-05, "site": "mayrhofner-bergbahnen.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.7073559281432355e-05, "site": "intermaps.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.4939364371253312e-05, "site": "loetschental.ch", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.2805169461074268e-05, "site": "huetten.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.2805169461074268e-05, "site": "webcams.travel", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 1.2805169461074268e-05, "site": "google.at", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/google.at.html"}, {"category": "", "frequency": 1.2805169461074268e-05, "site": "wildschoenau.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "mtv.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 1.0670974550895223e-05, "site": "google.de", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/google.de.html"}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "altabadia.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "dreizinnen.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "panoramahotel-oberjoch.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 1.0670974550895223e-05, "site": "kicker.de", "site_cat": "#000", "site_freq": null, "url": "../websites/kicker.de.html"}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "dolomitisuperski.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.0670974550895223e-05, "site": "zellamsee-kaprun.com", "site_cat": "#000", "site_freq": 0.0, "url": null}]')</script>
+    </div>
+
+</div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>OWA</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                     Get the data
+                </a>
+                <div class="copyright">
+                    &copy; Cliqz - All rights reserved
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/"
+                    target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/"
+                   target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local javascript modules -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.easy-autocomplete.js"></script>
+    <script type="text/javascript" src="../static/js/search-bar.js"></script>
+
+</footer>
+<!-- END OF FOOTER -->
